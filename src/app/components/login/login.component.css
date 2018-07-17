@@ -4,14 +4,16 @@
   align-items:  center;
   width: 100vw;
   height: 100vh;
+  background: url("../../../assets/image/login.jpg");
+  background-size: 100vw 100vh;
 }
 
 .login-body {
-  width: 35vw;
-  min-width: 350px;
+  width: 32vw;
+  min-width: 320px;
   height: 35vh;
   min-height: 280px;
-  background-color: rgba(255, 18, 7, 0.2);
+  background-color: rgba(255, 245, 245, 0.58);
   border-radius: 15px;
   display: flex;
   justify-content: center;
@@ -23,9 +25,18 @@
   min-height: 450px;
 }
 
+.login-body.protocol {
+  display: initial;
+  background-color: rgba(211, 230, 255, 1);
+  width: 42vw;
+  min-width: 420px;
+  height: 80vh;
+  min-height: 450px;
+}
+
 .login-content {
-  width: 32vw;
-  min-width: 320px;
+  width: 30vw;
+  min-width: 300px;
   height: 32vh;
   min-height: 250px;
   background: linear-gradient(to right, rgba(200, 222, 252, 1), rgba(255, 255, 255, 1));
@@ -35,7 +46,7 @@
   align-content: space-between;
 }
 
-.login-content {
+.login-content.register {
   height: 43vh;
   min-height: 420px;
 }
@@ -45,10 +56,18 @@
   justify-content: center;
   border: 1px solid rgba(0, 86, 201, 0.5);
   width: 80%;
-  height: 45px;
+  height: 35px;
   border-radius: 50px;
   margin-top: 20px;
   background-color: rgba(255, 255, 255, 1);
+}
+
+.input-item:first-child{
+  margin-top: 40px;
+}
+
+.input-item:nth-child(2){
+  margin: 0;
 }
 
 .input-item:last-child {
@@ -70,12 +89,13 @@
 .register-item.special {
   display: flex;
   justify-content: left;
-  margin: 10px 0;
+  margin: 20px 0 15px 0;
 }
 
 .register-text {
   width: 100%;
-  line-height: 35px;
+  line-height: 40px;
+  height: 30px;
   margin-left: 20px;
 }
 
@@ -90,13 +110,13 @@
 .register-input {
   width: 90%;
   border: 1px solid rgba(0, 86, 201, 0.5);
-  height: 35px;
+  height: 30px;
   border-radius: 50px;
   background-color: rgba(255, 255, 255, 1);
   outline: 0;
   padding-left: 5%;
   padding-right: 5%;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 .register-input.identify {
@@ -118,7 +138,7 @@
 
 .input-item .right {
   width: 90%;
-  margin: 10px;
+  margin: 5px;
 }
 
 .right > .input {
@@ -160,10 +180,10 @@
   width: 100%;
   font-size: 1.4rem;
   margin: 5px;
-  /*height: 45px;*/
   text-align: center;
-  padding: 10px  0;
+  padding: 8px  0;
   cursor: pointer;
+  outline: 0;
 }
 
 .button.login {
@@ -184,3 +204,98 @@
   width: 100%;
 }
 
+.to-login {
+  display: flex;
+  justify-content: center;
+  color: RGBA(58, 58, 58, 1);
+}
+
+.go-login {
+  cursor: pointer;
+  outline: 0;
+  color: RGBA(0, 86, 201, 1);
+}
+
+.register-protocol {
+  color: RGBA(0, 86, 201, 1);
+  cursor: pointer;
+  outline: 0;
+}
+
+.button.agree {
+  width: 15%;
+  border-radius: 5px;
+  padding: 5px 20px;
+  background-color: RGBA(35, 86, 133, 1);
+  color: rgba(255, 255, 255, 1);
+  font-size: 1.4rem;
+}
+
+.button.disagree {
+  width: 15%;
+  border-radius: 5px;
+  padding: 5px 20px;
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid  RGBA(35, 86, 133, 1);
+  color:  RGBA(35, 86, 133, 1);
+  font-size: 1.4rem;
+}
+
+.protocol-title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  color: RGBA(35, 86, 133, 1);
+}
+
+.protocol-title > .title{
+  height: 60px;
+  line-height: 60px;
+  font-size: 1.4rem;
+}
+
+.protocol-body {
+  display: flex;
+  justify-content: center;
+}
+
+.protocol-back {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: rgba(255,255,255,1);
+  border: 1px solid rgba(216, 191, 216, 1);
+  height: 62vh;
+  min-height: 320px;
+  overflow:scroll;
+}
+
+.protocol-back > .protocol {
+  width: 100%;
+}
+
+
+.protocol-zy-title {
+  display: flex;
+  justify-content: center;
+}
+
+.protocol-zy-title > .title {
+  font-size: 1.2rem;
+  height: 60px;
+  line-height: 60px;
+}
+
+.protocol-back > .protocol{
+  padding: 0 5px 0 10px;
+}
+
+.protocol-footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
