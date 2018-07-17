@@ -18,7 +18,12 @@
   align-items:  center;
 }
 
-.login-cotent {
+.login-body.register {
+  height: 45vh;
+  min-height: 450px;
+}
+
+.login-content {
   width: 32vw;
   min-width: 320px;
   height: 32vh;
@@ -28,6 +33,11 @@
   justify-content: center;
   flex-wrap: wrap;
   align-content: space-between;
+}
+
+.login-content {
+  height: 43vh;
+  min-height: 420px;
 }
 
 .input-item {
@@ -43,6 +53,58 @@
 
 .input-item:last-child {
   margin-bottom: 15px;
+}
+
+.register-item {
+  width: 80%;
+}
+
+.register-item:first-child{
+  margin-top: 10px;
+}
+
+.register-item:last-child {
+  margin-bottom: 15px;
+}
+
+.register-item.special {
+  display: flex;
+  justify-content: left;
+  margin: 10px 0;
+}
+
+.register-text {
+  width: 100%;
+  line-height: 35px;
+  margin-left: 20px;
+}
+
+.notification {
+  color: rgba(255, 0, 0, 1);
+}
+
+.register-output {
+  width: 100%;
+}
+
+.register-input {
+  width: 90%;
+  border: 1px solid rgba(0, 86, 201, 0.5);
+  height: 35px;
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 1);
+  outline: 0;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: 1.4rem;
+}
+
+.register-input.identify {
+  width: 50%;
+}
+
+.identify-image {
+  width: 30%;
 }
 
 .input-item .left {
@@ -95,23 +157,30 @@
 
 .button{
   border-radius: 50px;
-  width: 50%;
+  width: 100%;
   font-size: 1.4rem;
   margin: 5px;
   /*height: 45px;*/
   text-align: center;
   padding: 10px  0;
+  cursor: pointer;
 }
 
 .button.login {
+  width: 50%;
   border: 1px solid  rgba(0, 86, 201, 1);
   background-color: rgba(0, 86, 201, 1);
   color: rgba(255, 255, 255, 1);
 }
 
 .button.register {
+  width: 50%;
   border: 1px solid rgba(0, 86, 201, 1);
   background-color: rgba(255, 255, 255, 1);
   color: rgba(0, 86, 201, 1);
+}
+
+.button.just-register {
+  width: 100%;
 }
 

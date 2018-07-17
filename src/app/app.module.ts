@@ -7,16 +7,19 @@ import { LoginComponent } from './components/login/login.component';
 // import { LoginModule } from './components/login/login.module';
 import { Routes } from '@angular/router';
 import {RouterModule} from '@angular/router';
+import {RegisterComponent} from './components/login/register/register.component';
 
 const appRoutes: Routes = [
-  { path: 'login', component: LoginComponent }
+  { path: 'login', component: LoginComponent },
+  { path: 'register', component: RegisterComponent }
 ];
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
