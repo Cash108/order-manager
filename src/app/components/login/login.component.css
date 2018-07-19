@@ -207,17 +207,17 @@
 .to-login {
   display: flex;
   justify-content: center;
-  color: RGBA(58, 58, 58, 1);
+  color: rgba(58, 58, 58, 1);
 }
 
 .go-login {
   cursor: pointer;
   outline: 0;
-  color: RGBA(0, 86, 201, 1);
+  color: rgba(0, 86, 201, 1);
 }
 
 .register-protocol {
-  color: RGBA(0, 86, 201, 1);
+  color: rgba(0, 86, 201, 1);
   cursor: pointer;
   outline: 0;
 }
@@ -226,7 +226,7 @@
   width: 15%;
   border-radius: 5px;
   padding: 5px 20px;
-  background-color: RGBA(35, 86, 133, 1);
+  background-color: rgba(35, 86, 133, 1);
   color: rgba(255, 255, 255, 1);
   font-size: 1.4rem;
 }
@@ -236,8 +236,8 @@
   border-radius: 5px;
   padding: 5px 20px;
   background-color: rgba(255, 255, 255, 1);
-  border: 1px solid  RGBA(35, 86, 133, 1);
-  color:  RGBA(35, 86, 133, 1);
+  border: 1px solid  rgba(35, 86, 133, 1);
+  color:  rgba(35, 86, 133, 1);
   font-size: 1.4rem;
 }
 
@@ -248,7 +248,7 @@
 }
 
 .title {
-  color: RGBA(35, 86, 133, 1);
+  color: rgba(35, 86, 133, 1);
 }
 
 .protocol-title > .title{

@@ -1,0 +1,21 @@
+<div class="company-order-back">
+  <div class="company-order-menu">
+    <div class="blank-filling">
+    </div>
+    <div class="menu-logo">
+      <img class="logo" src="../../../assets/image/logo.png" height="100" width="100"/>
+    </div>
+    <div class="menu-menu">
+      <p-menu [model]="items"></p-menu>
+    </div>
+  </div>
+
+  <div class="company-order-interface">
+    <div class="interface-title">
+        <span class="normal-text">数据统计</span>
+    </div>
+    <div class="interface-content">
+        <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

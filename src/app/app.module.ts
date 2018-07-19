@@ -1,40 +1,36 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
-import {CheckboxModule} from 'primeng/checkbox';
 
 import {AppComponent} from './app.component';
-import {LoginComponent} from './components/login/login.component';
-// import { LoginModule } from './components/login/login.module';
 import {Routes} from '@angular/router';
 import {RouterModule} from '@angular/router';
-import {RegisterComponent} from './components/login/register/register.component';
-import {ProtocolComponent} from './components/login/protocol/protocol.component';
+import {DataStatisticsComponent} from './components/company-order/data-statistics/data-statistics.component';
+import { CompanyOrderComponent } from './components/company-order/company-order.component';
 
 const appRoutes: Routes = [
-  {path: 'login', component: LoginComponent},
-  {path: 'register', component: RegisterComponent},
-  {path: 'protocol', component: ProtocolComponent}
+  {path: '', redirectTo: '/login', pathMatch: 'full'},
+  {path: 'login', loadChildren: '../app/components/login/login.module#LoginModule'},
+  {path: 'company-order', loadChildren: '../app/components/company-order/company-order.module#CompanyOrderModule'}
 ];
 
 
 @NgModule({
   declarations: [
-    AppComponent,
-    LoginComponent,
-    RegisterComponent,
-    ProtocolComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
-    CheckboxModule,
-    RouterModule.forRoot(
-      appRoutes,
-      // { enableTracing: true } // <-- debugging purposes only
-    )
+    RouterModule.forRoot(appRoutes, {useHash: true})
+    // RouterModule.forRoot(
+    //   appRoutes,
+    //
+    //   // { enableTracing: true } // <-- debugging purposes only
+    // )
     // LoginModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  exports: [RouterModule]
 })
 export class AppModule {
 }

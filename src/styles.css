@@ -7,3 +7,8 @@ html {
 body {
   margin: 0 !important;
 }
+
+.normal-text {
+  color: rgba(58, 58, 58, 1);
+  font-size: 1.2rem;
+}
