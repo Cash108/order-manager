@@ -4,8 +4,9 @@ import {NgModule} from '@angular/core';
 import {AppComponent} from './app.component';
 import {Routes} from '@angular/router';
 import {RouterModule} from '@angular/router';
-import {DataStatisticsComponent} from './components/company-order/data-statistics/data-statistics.component';
-import { CompanyOrderComponent } from './components/company-order/company-order.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 const appRoutes: Routes = [
   {path: '', redirectTo: '/login', pathMatch: 'full'},
@@ -20,7 +21,11 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(appRoutes, {useHash: true})
+    BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule,
+    RouterModule.forRoot(appRoutes, {useHash: true}),
+    NgbModule.forRoot()
     // RouterModule.forRoot(
     //   appRoutes,
     //

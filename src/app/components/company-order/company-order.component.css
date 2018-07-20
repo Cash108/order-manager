@@ -45,6 +45,8 @@
   padding-left: 20px;
   font-size: 1.4rem;
   border-bottom: 5px solid rgba(236, 236, 236, 1);
+  display: flex;
+  justify-content: space-between;
 }
 
 .interface-content {

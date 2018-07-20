@@ -12,3 +12,18 @@ body {
   color: rgba(58, 58, 58, 1);
   font-size: 1.2rem;
 }
+
+.sub-title {
+  background-color: rgba(236, 236, 236, 1);
+  display: flex;
+  height: 30px;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.left-line {
+  margin: 0 10px 0  20px;
+  height: 20px;
+  width: 5px;
+  background-color: rgba(35, 86, 133, 1);
+}

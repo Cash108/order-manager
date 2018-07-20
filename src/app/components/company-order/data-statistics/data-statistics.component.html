@@ -1,3 +1,70 @@
-<p>
-  data-statistics works!
-</p>
+<div class="data-interface">
+  <div class="condition-backs">
+    <span class="normal-text condition-item">选择地区</span>
+    <span class="condition-item">
+      <p-dropdown [options]="select_city1" [(ngModel)]="city1_condition"></p-dropdown>
+    </span>
+    <span class="condition-item">
+      <p-dropdown [options]="select_city2" [(ngModel)]="city2_condition"></p-dropdown>
+    </span>
+    <span class="condition-item">
+      <p-dropdown [options]="select_city3" [(ngModel)]="city3_condition"></p-dropdown>
+    </span>
+    <span class="normal-text condition-item">筛选时间</span>
+    <span class="condition-item">
+      <p-selectButton [options]="select_time" [(ngModel)]="time_condition"></p-selectButton>
+    </span>
+    <span class="condition-item">
+      <p-calendar [(ngModel)]="start_time"></p-calendar>
+      <span> — </span>
+      <p-calendar [(ngModel)]="end_time"></p-calendar>
+    </span>
+    <span class="condition-item">
+    </span>
+  </div>
+
+  <div class="sub-title">
+    <div class="left-line"></div>
+    <span class="normal-text">总览</span>
+  </div>
+
+  <div class="total-data-back">
+    <div class="total-data-items">
+        <div class="total-data-item">
+          <span class="item-title normal-text">营业总额（万元）</span>
+          <span class="normal-text item-content">￥38</span>
+        </div>
+    </div>
+    <div class="total-data-items">
+      <div class="total-data-item">
+        <span class="item-title normal-text">平台收入（万元）</span>
+        <span class="normal-text item-content">￥38</span>
+      </div>
+    </div>
+    <div class="total-data-items">
+      <div class="total-data-item">
+        <span class="item-title normal-text">商家收入（万元）</span>
+        <span class="normal-text item-content">￥38</span>
+      </div>
+    </div>
+    <div class="total-data-items">
+      <div class="total-data-item">
+        <span class="item-title normal-text">平台补贴（万元）</span>
+        <span class="normal-text item-content">￥38</span>
+      </div>
+    </div>
+    <div class="total-data-items">
+      <div class="total-data-item">
+        <span class="item-title normal-text">有效订单（单）</span>
+        <span class="normal-text item-content">￥38</span>
+      </div>
+    </div>
+    <div class="total-data-items">
+      <div class="total-data-item">
+        <span class="item-title normal-text">总退款（万元）</span>
+        <span class="normal-text item-content">￥38</span>
+      </div>
+    </div>
+  </div>
+
+</div>
